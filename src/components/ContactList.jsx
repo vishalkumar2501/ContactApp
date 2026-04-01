@@ -1,8 +1,10 @@
 import React from 'react'
 
-const ContactList = () => {
+const ContactList = () => {  {/*Class components are written in CamelCase */} 
   return (
-    <div></div>
+    <div>
+         
+    </div>
   )
 }
 
