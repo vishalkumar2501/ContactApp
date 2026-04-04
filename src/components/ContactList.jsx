@@ -1,26 +1,33 @@
-import React from 'react'
+import React from 'react';
 
-const ContactList = (props) => {  {/*Class components are written in CamelCase */} 
-
-console.log(props)
-
-const renderContactList = props.contacts.map((contact)=>{
-    return (
-        <div className=''>
-            <div className=' '>
-                <div className=''> {contact.name}</div>
-                <div className=''> {contact.email}</div>
+const ContactList = (props) => {
+    const renderContactList = props.contact.map((contact) => {
+        return (
+            <div key={contact.id} className="flex justify-between items-center border-b border-gray-500 py-4 px-2">
+                <div className="flex flex-col">
+                    <div className="text-lg font-bold text-white">
+                        {contact.name}
+                    </div>
+                    <div className="text-gray-300 text-md">
+                        {contact.email}
+                    </div>
+                </div>
+                <div className="text-red-500 cursor-pointer">
+                    <i className="trash alternate outline icon large"></i>
+                </div>
             </div>
-            <i className='trash alternate outline icon'></i>
+        );
+    });
+
+    return (
+        <div className="bg-[#3d4451] min-h-screen p-10">
+            <div className="max-w-4xl mx-auto">
+                <div className="flex flex-col">
+                    {renderContactList}
+                </div>
+            </div>
         </div>
     );
-})
-
- return (
-    <div className='p-5 text-3xl font-semiboldbold'>
-         {renderContactList}
-    </div>
-  )
 }
 
-export default ContactList
+export default ContactList;
