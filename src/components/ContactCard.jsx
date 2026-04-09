@@ -5,18 +5,24 @@ const ContactCard = (props) => {
   return (
     <div>
          <div key={id} className="flex justify-between items-center border-b border-gray-500 py-4 px-2">
+            <div className='flex items-center gap-4'>
+                    <img 
+                                 src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+                                 alt="avatar"
+                                 className="w-10 h-10 rounded-full"
+                    />
                 <div className="flex flex-col">
                     <div className="text-lg font-bold text-white">
-                        {name}
+                        {name} 
                     </div>
                     <div className="text-gray-300 text-md">
                         {email}
                     </div>
-                    <div>
-
-                    </div>
                 </div>
-               
+               </div>
+                    <div >
+                        <button className=' text-red-800 text-2xl'>🗑️</button>
+                    </div>
             </div>
 
     </div>
