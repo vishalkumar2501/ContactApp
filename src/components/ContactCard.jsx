@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ContactCard = (props) => {
-    const {id ,name, email} = props.contact;
+    const {id ,name, email} = props.contact;  //child componenets to parent component || props Destructuring method
   return (
     <div>
          <div key={id} className="flex justify-between items-center border-b border-gray-500 py-4 px-2">
@@ -21,7 +21,7 @@ const ContactCard = (props) => {
                 </div>
                </div>
                     <div >
-                        <button className=' text-red-800 text-2xl'>🗑️</button>
+                        <button className="bg-red-500 text-white px-3 py-1 rounded">Delete</button>
                     </div>
             </div>
 
