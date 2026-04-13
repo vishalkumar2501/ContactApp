@@ -27,7 +27,7 @@ class AddContact extends React.Component {
                         <input type="text"
                                name="name"
                                placeholder="Enter your name" 
-                               className='px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"'
+                               className='px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
                                value={this.state.name}
                                onChange={(e) => this.setState({ name: e.target.value })}/>
                     </div>
@@ -36,7 +36,7 @@ class AddContact extends React.Component {
                         <input type="email"
                                name="email" 
                                placeholder="Enter your email"
-                               className='px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"'
+                               className='px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500'
                                value={this.state.email}
                                onChange={(e) => this.setState({ email: e.target.value })}/>
 
