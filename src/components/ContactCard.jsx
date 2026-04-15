@@ -20,8 +20,13 @@ const ContactCard = (props) => {
                     </div>
                 </div>
                </div>
-                    <div >
-                        <button onClick={() => props.deleteContactHandler(id)} className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                    <div>
+                        <button
+                            onClick={() => props.deleteContactHandler(id)}
+                            className="inline-flex items-center gap-2 rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-red-500/20 transition duration-200 hover:-translate-y-0.5 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300"
+                        >
+                            Delete
+                        </button>
                     </div>
             </div>
 
