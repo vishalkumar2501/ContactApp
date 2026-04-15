@@ -21,14 +21,19 @@ const App = () => {
     const updatedContacts = [...contacts, newContact]; // purane + naya contact
 
     setContacts(updatedContacts); // state update
-};
+  };
 
-    
+  const deleteContactHandler = (id) => {
+    const updatedContacts = contacts.filter((contact) => contact.id !== id); // id match na karle to rakhenge
+    setContacts(updatedContacts); // state update
+  };
+
+
   return (
     <div className=' flex flex-col min-h-screen bg-gray-600'>
        <Header />
        <AddContact addContactHandler={addContactHandler} />
-       <ContactList contact={contacts} />
+       <ContactList contact={contacts} deleteContactHandler={deleteContactHandler} />
 
     </div>
   )

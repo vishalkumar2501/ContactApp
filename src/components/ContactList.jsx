@@ -5,7 +5,7 @@ import ContactCard from '../components/ContactCard';
 const ContactList = (props) => {
     const renderContactList = props.contact.map((contact) => {
         return (
-           <ContactCard contact={contact} />
+           <ContactCard contact={contact} deleteContactHandler={props.deleteContactHandler} />
         );
     });
 

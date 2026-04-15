@@ -21,7 +21,7 @@ const ContactCard = (props) => {
                 </div>
                </div>
                     <div >
-                        <button className="bg-red-500 text-white px-3 py-1 rounded">Delete</button>
+                        <button onClick={() => props.deleteContactHandler(id)} className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
                     </div>
             </div>
 
